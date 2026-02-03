@@ -4,8 +4,8 @@ A pixel-perfect mobile app interface built with React, TypeScript, and styled-co
 
 ## 🚀 Live Demo
 
-- **GitHub Repository**: [Your Repository URL]
-- **Live Demo**: [Your Hosted URL]
+- **GitHub Repository**: https://github.com/hardikmishra0910/Mobile-App-Interface
+- **Live Demo**: [Deploy to get hosted URL]
 
 ## 📱 App Screens
 
@@ -65,8 +65,8 @@ A pixel-perfect mobile app interface built with React, TypeScript, and styled-co
 
 1. **Clone the repository:**
 ```bash
-git clone [your-repository-url]
-cd mobile-app-interface
+git clone https://github.com/hardikmishra0910/Mobile-App-Interface.git
+cd Mobile-App-Interface
 ```
 
 2. **Install dependencies:**
