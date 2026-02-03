@@ -159,9 +159,7 @@ The app uses styled-components for easy customization:
 - ✅ Edge (latest)
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 📄 License
 
-This project is created for interview/assessment purposes and demonstrates modern React development practices.
 
 ---
 
