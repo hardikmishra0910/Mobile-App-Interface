@@ -5,7 +5,7 @@ A pixel-perfect mobile app interface built with React, TypeScript, and styled-co
 ## 🚀 Live Demo
 
 - **GitHub Repository**: https://github.com/hardikmishra0910/Mobile-App-Interface
-- **Live Demo**: mobile-app-interface-nine.vercel.app
+- **Live Demo**: https://mobile-app-interface-nine.vercel.app
 
 ## 📱 App Screens
 
