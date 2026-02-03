@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# Mobile App Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A pixel-perfect mobile app interface built with React, TypeScript, and styled-components. The design features a centered mobile frame with seamless navigation between pages.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Responsive Design**: Mobile-first approach with a centered mobile frame
+- **Modern UI**: Clean, modern interface with gradient backgrounds and smooth animations
+- **Navigation**: Seamless navigation between Home, Profile, and Settings pages
+- **TypeScript**: Full TypeScript support for better development experience
+- **Styled Components**: CSS-in-JS styling with styled-components
+- **React Icons**: Beautiful icons from Feather Icons
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Home Page
+- Welcome greeting with user name
+- Search functionality
+- Statistics cards with key metrics
+- Recent activity feed
+- Interactive elements with hover effects
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Profile Page
+- User profile with avatar and basic information
+- Contact information section
+- Achievement badges
+- Statistics overview
+- Edit profile functionality
 
-### `npm test`
+### Settings Page
+- Account management options
+- Preference toggles (notifications, dark mode, biometric auth)
+- Language selection
+- Help and support section
+- Sign out functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React 19.2.4**: Modern React with hooks
+- **TypeScript**: Type-safe development
+- **Styled Components**: CSS-in-JS styling
+- **React Router DOM**: Client-side routing
+- **React Icons**: Icon library
+- **Create React App**: Build tooling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd mobile-app-interface
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Install dependencies:
+```bash
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Building for Production
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This builds the app for production to the `build` folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
+
+The app is ready to be deployed to any static hosting service like:
+- Vercel
+- Netlify
+- GitHub Pages
+- Firebase Hosting
+
+## Design Features
+
+- **Mobile Frame**: 375x812px mobile frame centered on the page
+- **Status Bar**: Realistic iOS-style status bar
+- **Gradient Backgrounds**: Beautiful gradient backgrounds throughout
+- **Smooth Animations**: Hover effects and transitions
+- **Box Shadows**: Depth and elevation with subtle shadows
+- **Typography**: Clean, readable typography with proper hierarchy
+- **Color Scheme**: Modern color palette with primary brand colors
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+This project is created for interview/assessment purposes.

@@ -14,11 +14,20 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #f5f5f5;
+    color: #333;
   }
 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+  input {
+    font-family: inherit;
   }
 
   /* Custom scrollbar */
