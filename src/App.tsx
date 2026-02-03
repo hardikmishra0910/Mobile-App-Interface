@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import LandingScreen from './pages/LandingScreen';
 import LoginScreen from './pages/LoginScreen';
@@ -56,6 +56,7 @@ const BottomNavigation = styled.div`
   border-top: 1px solid #e0e0e0;
   font-size: 14px;
   color: #666;
+  gap: 16px;
 `;
 
 const NavDots = styled.div`
@@ -69,13 +70,59 @@ const NavDot = styled.div<{ active?: boolean }>`
   height: 8px;
   border-radius: 50%;
   background: ${props => props.active ? '#333' : '#ccc'};
+  transition: background-color 0.3s ease;
 `;
 
 const PageIndicator = styled.div`
-  margin: 0 16px;
+  font-size: 12px;
+  color: #999;
+  min-width: 40px;
+  text-align: center;
+`;
+
+const AdobeXDText = styled.div`
   font-size: 12px;
   color: #999;
 `;
+
+// Component to handle dynamic navigation based on current route
+const DynamicBottomNavigation: React.FC = () => {
+  const location = useLocation();
+  
+  // Define page mapping
+  const getPageInfo = (pathname: string) => {
+    switch (pathname) {
+      case '/':
+        return { currentPage: 1, totalPages: 4, activeDot: 0 };
+      case '/login':
+        return { currentPage: 2, totalPages: 4, activeDot: 1 };
+      case '/signup':
+        return { currentPage: 3, totalPages: 4, activeDot: 1 };
+      case '/profile':
+        return { currentPage: 4, totalPages: 4, activeDot: 2 };
+      default:
+        return { currentPage: 1, totalPages: 4, activeDot: 0 };
+    }
+  };
+
+  const pageInfo = getPageInfo(location.pathname);
+
+  return (
+    <BottomNavigation>
+      <NavDots>
+        <NavDot active={pageInfo.activeDot === 0} />
+        <NavDot active={pageInfo.activeDot === 1} />
+        <NavDot active={pageInfo.activeDot === 2} />
+      </NavDots>
+      <PageIndicator>
+        {pageInfo.currentPage} of {pageInfo.totalPages}
+      </PageIndicator>
+      <AdobeXDText>
+        Made with Adobe XD
+      </AdobeXDText>
+    </BottomNavigation>
+  );
+};
 
 function App() {
   return (
@@ -96,17 +143,7 @@ function App() {
                 <Route path="/profile" element={<ProfileScreen />} />
               </Routes>
             </ContentArea>
-            <BottomNavigation>
-              <NavDots>
-                <NavDot />
-                <NavDot active />
-                <NavDot />
-              </NavDots>
-              <PageIndicator>1 of 4</PageIndicator>
-              <div style={{ fontSize: '12px', color: '#999' }}>
-                Made with Adobe XD
-              </div>
-            </BottomNavigation>
+            <DynamicBottomNavigation />
           </Router>
         </MobileFrame>
       </AppContainer>
