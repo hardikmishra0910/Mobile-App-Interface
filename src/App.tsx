@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import LandingScreen from './pages/LandingScreen';
-import LoginScreen from './pages/LoginScreen';
-import SignupScreen from './pages/SignupScreen';
-import ProfileScreen from './pages/ProfileScreen';
+import { LandingScreen, LoginScreen, SignupScreen, ProfileScreen } from './pages';
 import GlobalStyles from './styles/GlobalStyles';
 
 const AppContainer = styled.div`
